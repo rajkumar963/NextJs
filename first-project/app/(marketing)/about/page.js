@@ -1,3 +1,6 @@
+export const metadata = {
+  title: 'About | Create Next App',
+}
 import Link from "next/link";
 
 export default function About() {

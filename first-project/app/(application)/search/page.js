@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Search | Create Next App',
+}
+
 import Link from "next/link";
 
 export default function Search(){

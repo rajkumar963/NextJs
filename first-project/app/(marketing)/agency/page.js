@@ -1,3 +1,6 @@
+export const metadata = {
+  title: 'Service Agency | Create Next App',
+}
 import Link from "next/link";
 export default function Agency() {
     return (

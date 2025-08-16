@@ -1,4 +1,7 @@
-'use client'
+
+export const metadata = {
+  title: 'Home ',
+}
 import Link from "next/link";
 
 export default function Home(props) {

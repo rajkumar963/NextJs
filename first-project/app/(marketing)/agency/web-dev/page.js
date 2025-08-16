@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Web Development ',
+}
+
 export default function Wendev() {
     return (
         <div>
