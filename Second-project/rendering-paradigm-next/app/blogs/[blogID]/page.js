@@ -2,24 +2,31 @@ import Link from 'next/link'
 
 export const dynamicParams = false;
 
-export async function generateStaticParams() {
-  const  res=await fetch("https://jsonplaceholder.typicode.com/todos");
-  const data = await res.json();
-  console.log(data);
-  return data.map(({id}) => ({
-    blogID: `${id}`,
-  }))
-  // return [
-  //   { blogID: "1" },
-  //   { blogID: "2" },
-  //   { blogID: "3" },
-  //   { blogID: "4" },
-  //   { blogID: "5" },
-  // ];
-}
+//ISR
+//export const revalidate = 2;
+
+//SSG
+// export async function generateStaticParams() {
+//   const  res=await fetch("https://jsonplaceholder.typicode.com/todos");
+//   const data = await res.json();
+//   console.log(data);
+//   return data.map(({id}) => ({
+//     blogID: `${id}`,
+//   }))
+//   // return [
+//   //   { blogID: "1" },
+//   //   { blogID: "2" },
+//   //   { blogID: "3" },
+//   //   { blogID: "4" },
+//   //   { blogID: "5" },
+//   // ];
+// }
 
 const Blogs =async ({params})=> {
     const {blogID} = await params;
+  //   const  res=await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  // const data = await res.json();
+  // console.log(data);
   return (
     <>
     <nav>
@@ -47,8 +54,8 @@ const Blogs =async ({params})=> {
         </ul>
       </nav>
       <div>
-        Welcome to blog {blogID}
-
+        <h2>Welcome to blog {blogID}</h2>
+         <h3>Date: {new Date().toLocaleString()}</h3>
       </div>
     </>
   )
