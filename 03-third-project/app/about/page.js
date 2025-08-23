@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Comments from "@/components/Comments";
 
 const About = () => {
   console.log('About Page');
@@ -31,6 +32,7 @@ const About = () => {
       <div>
         <h1>About Us</h1>
         <p>We are a company dedicated to providing quality services.</p>
+        <Comments />
       </div>
     </>
   );
