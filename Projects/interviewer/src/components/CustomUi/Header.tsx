@@ -10,7 +10,7 @@ export default function Header() {
         </div>
         <ul className='flex space-x-8 font-medium'>
           <li className='cursor-pointer'><Link href="/dashboard">Home</Link></li>
-          <li className='cursor-pointer'><Link href="">Plan</Link></li>
+          <li className='cursor-pointer'><Link href="/dashboard/plan">Plan</Link></li>
           <li className='cursor-pointer'><Link href="">Logout</Link></li>
         </ul>
       </nav>
